@@ -297,7 +297,11 @@ if not pivot_airline.empty:
         height=600
     )
 
-    st.plotly_chart(fig_airline, use_container_width=True)
+    st.plotly_chart(
+    fig_airline,
+    use_container_width=True,
+    key=f"fig_airline_{filter_suffix}"
+    )
 
 
 # ==============================================================
@@ -338,7 +342,11 @@ if not destination_data.empty:
         height=600
     )
 
-    st.plotly_chart(fig_destination, use_container_width=True)
+    st.plotly_chart(
+    fig_destination,
+    use_container_width=True,
+    key=f"fig_destination_{filter_suffix}"
+    )
 
 
 # ==============================================================
@@ -373,7 +381,11 @@ if not monthly_data.empty:
         height=500
     )
 
-    st.plotly_chart(fig_month, use_container_width=True)
+    st.plotly_chart(
+    fig_month,
+    use_container_width=True,
+    key=f"fig_month_{filter_suffix}"
+    )
 
 # ----------------------------------------------------------------------
 # GRÁFICOS
@@ -560,7 +572,11 @@ if not pivot_heat_airline.empty:
 
     fig_heat_airline.update_layout(height=700)
 
-    st.plotly_chart(fig_heat_airline, use_container_width=True)
+    st.plotly_chart(
+    fig_heat_airline,
+    use_container_width=True,
+    key=f"fig_heat_airline_{filter_suffix}"
+    )
 
 
 # ==============================================================
@@ -601,7 +617,11 @@ if not pivot_heat_destination.empty:
 
     fig_heat_destination.update_layout(height=800)
 
-    st.plotly_chart(fig_heat_destination, use_container_width=True)
+    st.plotly_chart(
+    fig_heat_destination,
+    use_container_width=True,
+    key=f"fig_heat_destination_{filter_suffix}"
+    )
 
 
 # ==============================================================
