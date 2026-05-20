@@ -191,7 +191,7 @@ filter_suffix = (
     f"{selected_airline}_"
     f"{selected_destination}_"
     f"{selected_agency}"
-
+    )
 
 # ----------------------------------------------------------------------
 # VALIDAR RESULTADOS
