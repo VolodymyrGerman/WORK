@@ -186,6 +186,12 @@ if selected_destination != "Todos":
 if selected_agency != "Todas":
     df = df[df["AG"] == selected_agency]
 
+filter_suffix = (
+    f"{selected_month}_"
+    f"{selected_airline}_"
+    f"{selected_destination}_"
+    f"{selected_agency}"
+
 
 # ----------------------------------------------------------------------
 # VALIDAR RESULTADOS
